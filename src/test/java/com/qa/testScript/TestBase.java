@@ -31,7 +31,7 @@ public class TestBase {
 	@BeforeClass
 	public void Setup(String OrangeHrmURL,String browserName) throws IOException {
 		if (browserName.equalsIgnoreCase("Chrome")) {
-			getProperties();
+			
 			WebDriverManager.chromedriver().setup();
 			driver =new ChromeDriver();
 		
@@ -116,15 +116,7 @@ public class TestBase {
 
 	}
 	
-	public void getProperties() throws IOException {
-		
-		Properties properties= new Properties();
-		String projectPath=System.getProperty("user.dir");
-		InputStream input= new FileInputStream(projectPath+"\\src\\test\\java\\com\\qa\\testData\\login.properties");
-		properties.load(input);
-		System.out.println(properties.getProperty("UserName")+"   "+properties.getProperty("Password"));
-		
-	}
+
 
 
 }

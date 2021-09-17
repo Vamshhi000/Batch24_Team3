@@ -2,12 +2,12 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2021-09-17T19:29:42 IST" name="Suite" finished-at="2021-09-17T19:30:00 IST" duration-ms="18529">
+  <suite started-at="2021-09-17T20:19:30 IST" name="Suite" finished-at="2021-09-17T20:20:01 IST" duration-ms="31107">
     <groups>
     </groups>
-    <test started-at="2021-09-17T19:29:42 IST" name="Test_01" finished-at="2021-09-17T19:30:00 IST" duration-ms="18529">
+    <test started-at="2021-09-17T20:19:30 IST" name="Test_01" finished-at="2021-09-17T20:20:01 IST" duration-ms="31107">
       <class name="com.qa.testScript.Example_001">
-        <test-method is-config="true" signature="Setup(java.lang.String, java.lang.String)[pri:0, instance:com.qa.testScript.Example_001@3d1cfad4]" started-at="2021-09-17T19:29:42 IST" name="Setup" finished-at="2021-09-17T19:29:56 IST" duration-ms="13911" status="PASS">
+        <test-method is-config="true" signature="Setup(java.lang.String, java.lang.String)[pri:0, instance:com.qa.testScript.Example_001@747edf66]" started-at="2021-09-17T20:19:30 IST" name="Setup" finished-at="2021-09-17T20:19:44 IST" duration-ms="13961" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -23,7 +23,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Setup -->
-        <test-method signature="Recruitment(java.lang.String, java.lang.String)[pri:0, instance:com.qa.testScript.Example_001@3d1cfad4]" started-at="2021-09-17T19:29:57 IST" name="Recruitment" data-provider="Example" finished-at="2021-09-17T19:29:59 IST" duration-ms="2316" status="PASS">
+        <test-method signature="Recruitment(java.lang.String, java.lang.String)[pri:0, instance:com.qa.testScript.Example_001@747edf66]" started-at="2021-09-17T20:19:44 IST" name="Recruitment" data-provider="Example" finished-at="2021-09-17T20:20:00 IST" duration-ms="15877" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -39,7 +39,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Recruitment -->
-        <test-method is-config="true" signature="TearDown()[pri:0, instance:com.qa.testScript.Example_001@3d1cfad4]" started-at="2021-09-17T19:29:59 IST" name="TearDown" finished-at="2021-09-17T19:30:00 IST" duration-ms="725" status="PASS">
+        <test-method is-config="true" signature="TearDown()[pri:0, instance:com.qa.testScript.Example_001@747edf66]" started-at="2021-09-17T20:20:00 IST" name="TearDown" finished-at="2021-09-17T20:20:01 IST" duration-ms="632" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TearDown -->
