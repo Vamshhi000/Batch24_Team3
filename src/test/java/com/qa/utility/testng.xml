@@ -11,7 +11,7 @@
 
     <classes>
     
-			<class name="com.qa.testScript.Example_001"/>
+			<class name="com.qa.testScript.TC_OrangeHrm_011"/>
     </classes>
   </test> 
 </suite> 
