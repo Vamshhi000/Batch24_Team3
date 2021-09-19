@@ -2,40 +2,46 @@
 <testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
   <reporter-output>
     <line>
-      <![CDATA[First Name entered]]>
+      <![CDATA[PIM module page is displayed]]>
     </line>
     <line>
-      <![CDATA[Last Name entered]]>
+      <![CDATA[AddEmployee page is displayed]]>
     </line>
     <line>
-      <![CDATA[UserName entered]]>
+      <![CDATA[First Name is entered]]>
     </line>
     <line>
-      <![CDATA[Password entered]]>
+      <![CDATA[Last Name is entered]]>
     </line>
     <line>
-      <![CDATA[ConfirmPassword entered]]>
+      <![CDATA[Checkbox is selected and Login credentials are entered]]>
     </line>
     <line>
       <![CDATA[Employee is saved and personal information page is displayed]]>
     </line>
     <line>
+      <![CDATA[PIM module page is displayed]]>
+    </line>
+    <line>
+      <![CDATA[EmployeeList page is displayed]]>
+    </line>
+    <line>
       <![CDATA[Employee Name is entered]]>
     </line>
     <line>
-      <![CDATA[Employee is found]]>
+      <![CDATA[Employee Record is found]]>
     </line>
     <line>
       <![CDATA[Employee Record :Id First (& Middle) Name Last Name Job Title Employment Status Sub Unit Supervisor
-0259 Kim Smith]]>
+0255 Kim Smith]]>
     </line>
   </reporter-output>
-  <suite started-at="2021-09-19T14:45:08 IST" name="Suite" finished-at="2021-09-19T14:46:22 IST" duration-ms="74704">
+  <suite started-at="2021-09-19T19:03:01 IST" name="Suite" finished-at="2021-09-19T19:04:25 IST" duration-ms="84242">
     <groups>
     </groups>
-    <test started-at="2021-09-19T14:45:08 IST" name="Test_01" finished-at="2021-09-19T14:46:22 IST" duration-ms="74704">
+    <test started-at="2021-09-19T19:03:01 IST" name="Test_01" finished-at="2021-09-19T19:04:25 IST" duration-ms="84242">
       <class name="com.qa.testScript.TC_OrangeHrm_011">
-        <test-method is-config="true" signature="Setup(java.lang.String, java.lang.String)[pri:0, instance:com.qa.testScript.TC_OrangeHrm_011@cad498c]" started-at="2021-09-19T14:45:08 IST" name="Setup" finished-at="2021-09-19T14:45:28 IST" duration-ms="20544" status="PASS">
+        <test-method is-config="true" signature="Setup(java.lang.String, java.lang.String)[pri:0, instance:com.qa.testScript.TC_OrangeHrm_011@378542de]" started-at="2021-09-19T19:03:01 IST" name="Setup" finished-at="2021-09-19T19:03:34 IST" duration-ms="33379" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -51,7 +57,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Setup -->
-        <test-method signature="addEmployee(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.qa.testScript.TC_OrangeHrm_011@cad498c]" started-at="2021-09-19T14:45:31 IST" name="addEmployee" data-provider="AddEmployee" finished-at="2021-09-19T14:45:59 IST" duration-ms="27577" status="PASS">
+        <test-method signature="addEmployee(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:1, instance:com.qa.testScript.TC_OrangeHrm_011@378542de]" started-at="2021-09-19T19:03:36 IST" name="addEmployee" data-provider="AddEmployee" finished-at="2021-09-19T19:04:02 IST" duration-ms="25797" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -81,26 +87,26 @@
           </params>
           <reporter-output>
             <line>
-              <![CDATA[First Name entered]]>
+              <![CDATA[PIM module page is displayed]]>
             </line>
             <line>
-              <![CDATA[Last Name entered]]>
+              <![CDATA[AddEmployee page is displayed]]>
             </line>
             <line>
-              <![CDATA[UserName entered]]>
+              <![CDATA[First Name is entered]]>
             </line>
             <line>
-              <![CDATA[Password entered]]>
+              <![CDATA[Last Name is entered]]>
             </line>
             <line>
-              <![CDATA[ConfirmPassword entered]]>
+              <![CDATA[Checkbox is selected and Login credentials are entered]]>
             </line>
             <line>
               <![CDATA[Employee is saved and personal information page is displayed]]>
             </line>
           </reporter-output>
         </test-method> <!-- addEmployee -->
-        <test-method signature="getEmployeeRecord(java.lang.String)[pri:1, instance:com.qa.testScript.TC_OrangeHrm_011@cad498c]" started-at="2021-09-19T14:45:59 IST" name="getEmployeeRecord" data-provider="getEmployeeRecord" finished-at="2021-09-19T14:46:22 IST" depends-on-methods="com.qa.testScript.TC_OrangeHrm_011.addEmployee" duration-ms="22910" status="PASS">
+        <test-method signature="getEmployeeRecord(java.lang.String)[pri:2, instance:com.qa.testScript.TC_OrangeHrm_011@378542de]" started-at="2021-09-19T19:04:02 IST" name="getEmployeeRecord" data-provider="getEmployeeRecord" finished-at="2021-09-19T19:04:24 IST" depends-on-methods="com.qa.testScript.TC_OrangeHrm_011.addEmployee" duration-ms="22512" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -110,18 +116,24 @@
           </params>
           <reporter-output>
             <line>
+              <![CDATA[PIM module page is displayed]]>
+            </line>
+            <line>
+              <![CDATA[EmployeeList page is displayed]]>
+            </line>
+            <line>
               <![CDATA[Employee Name is entered]]>
             </line>
             <line>
-              <![CDATA[Employee is found]]>
+              <![CDATA[Employee Record is found]]>
             </line>
             <line>
               <![CDATA[Employee Record :Id First (& Middle) Name Last Name Job Title Employment Status Sub Unit Supervisor
-0259 Kim Smith]]>
+0255 Kim Smith]]>
             </line>
           </reporter-output>
         </test-method> <!-- getEmployeeRecord -->
-        <test-method is-config="true" signature="TearDown()[pri:0, instance:com.qa.testScript.TC_OrangeHrm_011@cad498c]" started-at="2021-09-19T14:46:22 IST" name="TearDown" finished-at="2021-09-19T14:46:22 IST" duration-ms="495" status="PASS">
+        <test-method is-config="true" signature="TearDown()[pri:0, instance:com.qa.testScript.TC_OrangeHrm_011@378542de]" started-at="2021-09-19T19:04:24 IST" name="TearDown" finished-at="2021-09-19T19:04:25 IST" duration-ms="813" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TearDown -->

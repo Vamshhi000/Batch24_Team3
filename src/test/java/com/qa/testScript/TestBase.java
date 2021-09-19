@@ -55,7 +55,7 @@ public class TestBase {
 		String projectPath=System.getProperty("user.dir");
 		InputStream input= new FileInputStream(projectPath+"\\src\\test\\java\\com\\qa\\testData\\login.properties");
 		properties.load(input);
-		
+		driver.manage().window().maximize();
 		recruitmentPages.userName().sendKeys(properties.getProperty("UserName"));
 		recruitmentPages.password().sendKeys(properties.getProperty("Password"));
 		recruitmentPages.login().click();
@@ -86,7 +86,7 @@ public class TestBase {
 	}	
 
 	public String[][] getExcelData(String sheet) throws IOException{
-		String path="F:\\git project\\OrangeHrm_Automation\\src\\test\\java\\com\\qa\\testData\\orangeHrm_inputData.xlsx"; 
+		String path="C:\\Users\\INDIA\\Desktop\\OrangeHrmGitHub\\git project\\OrangeHrm_Automation\\src\\test\\java\\com\\qa\\testData\\orangeHrm_inputData.xlsx"; 
 		ExcelUtility excelUtils =new ExcelUtility(path,sheet);
 
 		int rowCount=excelUtils.getRowCount();
