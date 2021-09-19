@@ -17,6 +17,7 @@ import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Parameters;
 
+import com.qa.pages.OrangeHrm;
 import com.qa.pages.RecruitmentPages;
 import com.qa.utility.ExcelUtility;
 
@@ -26,6 +27,7 @@ import io.github.bonigarcia.wdm.WebDriverManager;
 public class TestBase {
 	WebDriver driver=null;
 	RecruitmentPages recruitmentPages;
+	OrangeHrm orangeHrm;
 	
 	@Parameters({ "OrangeHrmURL","Browser"})
 	@BeforeClass
@@ -45,6 +47,7 @@ public class TestBase {
 
 		}
 		recruitmentPages = new RecruitmentPages(driver);
+		orangeHrm = new OrangeHrm(driver);
 		driver.get(OrangeHrmURL);
 		
 		
@@ -83,7 +86,7 @@ public class TestBase {
 	}	
 
 	public String[][] getExcelData(String sheet) throws IOException{
-		String path="D:\\Automation\\Testing\\orangeHrmDemo\\src\\test\\java\\com\\qa\\testData\\orangeHrm_inputData.xlsx"; 
+		String path="C:\\Users\\tharu\\git\\OrangeHrm_Automation\\src\\test\\java\\com\\qa\\testData\\leave_list.xlsx"; 
 		ExcelUtility excelUtils =new ExcelUtility(path,sheet);
 
 		int rowCount=excelUtils.getRowCount();

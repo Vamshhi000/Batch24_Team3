@@ -11,7 +11,8 @@
 
     <classes>
     
-			<class name="com.qa.testScript.Example_001"/>
-    </classes>
+	<!--	 	<class name="com.qa.testScript.TC_ASSIGNLEAVE_001"/>
+	 -->	<class name="com.qa.testScript.TC_LEAVELIST_002"/>
+    	</classes>
   </test> 
 </suite> 
