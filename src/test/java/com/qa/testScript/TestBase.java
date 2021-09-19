@@ -31,7 +31,7 @@ public class TestBase {
 	@BeforeClass
 	public void Setup(String OrangeHrmURL,String browserName) throws IOException {
 		if (browserName.equalsIgnoreCase("Chrome")) {
-			getProperties();
+
 			WebDriverManager.chromedriver().setup();
 			driver =new ChromeDriver();
 		
@@ -45,9 +45,9 @@ public class TestBase {
 
 		}
 		recruitmentPages = new RecruitmentPages(driver);
+		
+		
 		driver.get(OrangeHrmURL);
-		
-		
 		Properties properties= new Properties();
 		String projectPath=System.getProperty("user.dir");
 		InputStream input= new FileInputStream(projectPath+"\\src\\test\\java\\com\\qa\\testData\\login.properties");
@@ -65,7 +65,7 @@ public class TestBase {
 	@AfterClass
 	public void TearDown() throws InterruptedException {
 
-		driver.quit();
+//		driver.quit();
 	}
 
 	public void captureScreenshot(WebDriver driver,String tname) throws IOException {
@@ -83,7 +83,8 @@ public class TestBase {
 	}	
 
 	public String[][] getExcelData(String sheet) throws IOException{
-		String path="D:\\Automation\\Testing\\orangeHrmDemo\\src\\test\\java\\com\\qa\\testData\\orangeHrm_inputData.xlsx"; 
+		String projectPath=System.getProperty("user.dir");
+		String path=projectPath+"\\src\\test\\java\\com\\qa\\testData\\orangeHrm_inputData.xlsx"; 
 		ExcelUtility excelUtils =new ExcelUtility(path,sheet);
 
 		int rowCount=excelUtils.getRowCount();
@@ -116,15 +117,7 @@ public class TestBase {
 
 	}
 	
-	public void getProperties() throws IOException {
-		
-		Properties properties= new Properties();
-		String projectPath=System.getProperty("user.dir");
-		InputStream input= new FileInputStream(projectPath+"\\src\\test\\java\\com\\qa\\testData\\login.properties");
-		properties.load(input);
-		System.out.println(properties.getProperty("UserName")+"   "+properties.getProperty("Password"));
-		
-	}
+
 
 
 }

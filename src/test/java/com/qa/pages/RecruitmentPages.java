@@ -286,7 +286,7 @@ public class RecruitmentPages {
 	 
 	}
 	
-	@FindBy(xpath ="//*[@id=\"ui-datepicker-div\"]/table/tbody/tr[4]/td[6]/a")
+	@FindBy(xpath ="//*[@id=\"ui-datepicker-div\"]/table/tbody/tr[2]/td[3]/a")
 	@CacheLookup
 	WebElement fromDate;
 	public WebElement fromDate()
@@ -322,7 +322,7 @@ public class RecruitmentPages {
 	 
 	}
 	
-	@FindBy(xpath ="//*[@id=\"ui-datepicker-div\"]/table/tbody/tr[4]/td[7]/a")
+	@FindBy(xpath ="//*[@id=\"ui-datepicker-div\"]/table/tbody/tr[5]/td[5]/a")
 	@CacheLookup
 	WebElement toDate;
 	public WebElement toDate()
@@ -331,6 +331,90 @@ public class RecruitmentPages {
 	 
 	}
 
+	
+	
+	@FindBy(xpath = "//*[@id=\"resultTable\"]/tbody/tr")
+	@CacheLookup
+	List<WebElement> searchResultTbody;
+	public List<WebElement> searchResultTbody()
+	{
+	 return searchResultTbody;
+	 
+	}
+	
+	
+	
+	
+	@FindBy(xpath ="//*[@id=\"resultTable\"]/tbody/tr[1]/td[2]")
+	@CacheLookup
+	WebElement tableVacency;
+	public WebElement tableVacency()
+	{
+	 return tableVacency;
+	 
+	}
+	
+	@FindBy(xpath ="//*[@id=\"resultTable\"]/tbody/tr[1]/td[4]")
+	@CacheLookup
+	WebElement tableHiringManager;
+	public WebElement tableHiringManager()
+	{
+	 return tableHiringManager;
+	 
+	}
+	
+	@FindBy(xpath ="//*[@id=\"frmCandidateVacancyStatus\"]/fieldset/ol/li[4]/label[2]")
+	@CacheLookup
+	WebElement confirmShortlist;
+	public WebElement confirmShortlist()
+	{
+	 return confirmShortlist;
+	 
+	}
+	
+	
+	@FindBy(xpath ="//*[@id=\"resultTable\"]/tbody/tr[1]/td[3]")
+	@CacheLookup
+	WebElement tableName;
+	public WebElement tableName()
+	{
+	 return tableName;
+	 
+	}
+	
+	@FindBy(xpath ="//*[@id=\"resultTable\"]/tbody/tr[1]/td[6]")
+	@CacheLookup
+	WebElement tableStatus;
+	public WebElement tableStatus()
+	{
+	 return tableStatus;
+	 
+	}
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
 	
 	
 	
