@@ -89,7 +89,7 @@ public class TestBase {
 	}	
 
 	public String[][] getExcelData(String sheet) throws IOException{
-		String path="S:\\e-Banking Project_Selenium\\OrangeHrm_Automation\\src\\test\\java\\com\\qa\\testData\\test.xlsx"; 
+		String path="C:\\Users\\INDIA\\Desktop\\OrangeHrmGitHub\\shiva\\OrangeHrm_Automation\\src\\test\\java\\com\\qa\\testData\\test.xlsx"; 
 		ExcelUtility excelUtils =new ExcelUtility(path,sheet);
 
 		int rowCount=excelUtils.getRowCount();

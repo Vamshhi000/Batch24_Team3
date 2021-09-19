@@ -8,13 +8,13 @@
     <parameter name="OrangeHrmURL" value="https://opensource-demo.orangehrmlive.com/"/>
     <parameter name="Browser" value="Chrome"/>
     <classes>
-      <class name="com.qa.testScript.TC_SearchSystemUser_001">
+      <class name="com.qa.testScript.TC_OrangeHrm_007">
         <methods>
-          <include name="system_user" invocation-numbers="1 2"/>
+          <include name="system_user"/>
           <include name="TearDown"/>
           <include name="Setup"/>
         </methods>
-      </class> <!-- com.qa.testScript.TC_SearchSystemUser_001 -->
+      </class> <!-- com.qa.testScript.TC_OrangeHrm_007 -->
     </classes>
   </test> <!-- Test_01(failed) -->
 </suite> <!-- Failed suite [Suite] -->
