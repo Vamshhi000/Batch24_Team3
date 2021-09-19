@@ -10,8 +10,10 @@
 					<parameter name="Browser" value="Chrome"></parameter>
 
     <classes>
-    
-			<class name="com.qa.testScript.Example_001"/>
+    <!-- 
+			<class name="com.qa.testScript.TC_SystemUser_001"/>
+	 -->		
+			<class name="com.qa.testScript.TC_SearchSystemUser_001"></class>
     </classes>
   </test> 
 </suite> 

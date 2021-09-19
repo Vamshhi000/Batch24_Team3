@@ -18,6 +18,7 @@ import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Parameters;
 
 import com.qa.pages.RecruitmentPages;
+import com.qa.pages.SystemUserPage;
 import com.qa.utility.ExcelUtility;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
@@ -26,16 +27,20 @@ import io.github.bonigarcia.wdm.WebDriverManager;
 public class TestBase {
 	WebDriver driver=null;
 	RecruitmentPages recruitmentPages;
+	SystemUserPage sp;
 	
 	@Parameters({ "OrangeHrmURL","Browser"})
 	@BeforeClass
 	public void Setup(String OrangeHrmURL,String browserName) throws IOException {
-		if (browserName.equalsIgnoreCase("Chrome")) {
+		if (browserName.equalsIgnoreCase("Chrome")) 
+		{
 			
 			WebDriverManager.chromedriver().setup();
 			driver =new ChromeDriver();
 		
-		}		else if (browserName.equalsIgnoreCase("Edge")) {
+		}		
+		else if (browserName.equalsIgnoreCase("Edge")) 
+		{
 
 			WebDriverManager.edgedriver().setup();
 
@@ -45,6 +50,7 @@ public class TestBase {
 
 		}
 		recruitmentPages = new RecruitmentPages(driver);
+		sp = new SystemUserPage(driver);
 		driver.get(OrangeHrmURL);
 		
 		
@@ -65,7 +71,7 @@ public class TestBase {
 	@AfterClass
 	public void TearDown() throws InterruptedException {
 
-		driver.quit();
+		//driver.quit();
 	}
 
 	public void captureScreenshot(WebDriver driver,String tname) throws IOException {
@@ -83,7 +89,7 @@ public class TestBase {
 	}	
 
 	public String[][] getExcelData(String sheet) throws IOException{
-		String path="D:\\Automation\\Testing\\orangeHrmDemo\\src\\test\\java\\com\\qa\\testData\\orangeHrm_inputData.xlsx"; 
+		String path="S:\\e-Banking Project_Selenium\\OrangeHrm_Automation\\src\\test\\java\\com\\qa\\testData\\test.xlsx"; 
 		ExcelUtility excelUtils =new ExcelUtility(path,sheet);
 
 		int rowCount=excelUtils.getRowCount();
