@@ -17,6 +17,7 @@ import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Parameters;
 
+import com.qa.pages.AddEmployeePages;
 import com.qa.pages.RecruitmentPages;
 import com.qa.utility.ExcelUtility;
 
@@ -26,11 +27,16 @@ import io.github.bonigarcia.wdm.WebDriverManager;
 public class TestBase {
 	WebDriver driver=null;
 	RecruitmentPages recruitmentPages;
+	AddEmployeePages addEmployeePages;
 	
 	@Parameters({ "OrangeHrmURL","Browser"})
 	@BeforeClass
 	public void Setup(String OrangeHrmURL,String browserName) throws IOException {
 		if (browserName.equalsIgnoreCase("Chrome")) {
+
+
+
+			
 
 			WebDriverManager.chromedriver().setup();
 			driver =new ChromeDriver();
@@ -45,6 +51,11 @@ public class TestBase {
 
 		}
 		recruitmentPages = new RecruitmentPages(driver);
+
+
+		 addEmployeePages = new AddEmployeePages(driver);
+		driver.get(OrangeHrmURL);
+
 		
 		
 		driver.get(OrangeHrmURL);
@@ -52,7 +63,7 @@ public class TestBase {
 		String projectPath=System.getProperty("user.dir");
 		InputStream input= new FileInputStream(projectPath+"\\src\\test\\java\\com\\qa\\testData\\login.properties");
 		properties.load(input);
-		
+		driver.manage().window().maximize();
 		recruitmentPages.userName().sendKeys(properties.getProperty("UserName"));
 		recruitmentPages.password().sendKeys(properties.getProperty("Password"));
 		recruitmentPages.login().click();
@@ -83,8 +94,10 @@ public class TestBase {
 	}	
 
 	public String[][] getExcelData(String sheet) throws IOException{
+
 		String projectPath=System.getProperty("user.dir");
 		String path=projectPath+"\\src\\test\\java\\com\\qa\\testData\\orangeHrm_inputData.xlsx"; 
+
 		ExcelUtility excelUtils =new ExcelUtility(path,sheet);
 
 		int rowCount=excelUtils.getRowCount();
