@@ -10,11 +10,16 @@
 					<parameter name="Browser" value="Chrome"></parameter>
 
     <classes>
+<<<<<<< HEAD
      
 			<class name="com.qa.testScript.TC_OrangeHrm_007"/>
 			
 			<class name="com.qa.testScript.TC_OrangeHrm_008"/>
 			
+=======
+    
+			<class name="com.qa.testScript.TC_OrangeHrm_011"/>
+>>>>>>> 23c6714606cf841921cd75843afb645abc8889fa
     </classes>
   </test> 
 </suite> 
