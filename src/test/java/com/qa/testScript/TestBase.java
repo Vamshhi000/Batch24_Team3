@@ -17,8 +17,13 @@ import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Parameters;
 
+
 import com.qa.pages.OrangeHrm;
+
+import com.qa.pages.AddEmployeePages;
+
 import com.qa.pages.RecruitmentPages;
+import com.qa.pages.SystemUserPage;
 import com.qa.utility.ExcelUtility;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
@@ -27,17 +32,26 @@ import io.github.bonigarcia.wdm.WebDriverManager;
 public class TestBase {
 	WebDriver driver=null;
 	RecruitmentPages recruitmentPages;
+
 	OrangeHrm orangeHrm;
+
+	SystemUserPage sp;
+
+	AddEmployeePages addEmployeePages;
+
 	
 	@Parameters({ "OrangeHrmURL","Browser"})
 	@BeforeClass
 	public void Setup(String OrangeHrmURL,String browserName) throws IOException {
-		if (browserName.equalsIgnoreCase("Chrome")) {
+		if (browserName.equalsIgnoreCase("Chrome")) 
+		{
 			
 			WebDriverManager.chromedriver().setup();
 			driver =new ChromeDriver();
 		
-		}		else if (browserName.equalsIgnoreCase("Edge")) {
+		}		
+		else if (browserName.equalsIgnoreCase("Edge")) 
+		{
 
 			WebDriverManager.edgedriver().setup();
 
@@ -47,7 +61,13 @@ public class TestBase {
 
 		}
 		recruitmentPages = new RecruitmentPages(driver);
+
 		orangeHrm = new OrangeHrm(driver);
+
+		sp = new SystemUserPage(driver);
+
+		 addEmployeePages = new AddEmployeePages(driver);
+
 		driver.get(OrangeHrmURL);
 		
 		
@@ -55,7 +75,7 @@ public class TestBase {
 		String projectPath=System.getProperty("user.dir");
 		InputStream input= new FileInputStream(projectPath+"\\src\\test\\java\\com\\qa\\testData\\login.properties");
 		properties.load(input);
-		
+		driver.manage().window().maximize();
 		recruitmentPages.userName().sendKeys(properties.getProperty("UserName"));
 		recruitmentPages.password().sendKeys(properties.getProperty("Password"));
 		recruitmentPages.login().click();
@@ -68,7 +88,7 @@ public class TestBase {
 	@AfterClass
 	public void TearDown() throws InterruptedException {
 
-		driver.quit();
+		//driver.quit();
 	}
 
 	public void captureScreenshot(WebDriver driver,String tname) throws IOException {
@@ -86,7 +106,10 @@ public class TestBase {
 	}	
 
 	public String[][] getExcelData(String sheet) throws IOException{
+
 		String path="C:\\Users\\INDIA\\Desktop\\OrangeHrmGitHub\\OrangeHrm_Automation\\src\\test\\java\\com\\qa\\testData\\leave_list.xlsx"; 
+
+		
 		ExcelUtility excelUtils =new ExcelUtility(path,sheet);
 
 		int rowCount=excelUtils.getRowCount();

@@ -10,9 +10,20 @@
 					<parameter name="Browser" value="Chrome"></parameter>
 
     <classes>
-    
+
+     
+			<class name="com.qa.testScript.TC_OrangeHrm_007"/>
+			
+			<class name="com.qa.testScript.TC_OrangeHrm_008"/>
+			
+
 		 	<class name="com.qa.testScript.TC_OrangeHrm_006"/>
 	 	<class name="com.qa.testScript.TC_OrangeHrm_005"/>
-    	</classes>
+
+
+			<class name="com.qa.testScript.TC_OrangeHrm_011"/>
+
+    </classes>
+
   </test> 
 </suite> 

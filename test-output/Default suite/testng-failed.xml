@@ -3,6 +3,7 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
+<<<<<<< HEAD
       <class name="com.qa.testScript.TC_LEAVELIST_002">
         <methods>
           <include name="TearDown"/>
@@ -10,6 +11,16 @@
           <include name="Setup"/>
         </methods>
       </class> <!-- com.qa.testScript.TC_LEAVELIST_002 -->
+=======
+      <class name="com.qa.testScript.TC_OrangeHrm_011">
+        <methods>
+          <include name="getEmployeeRecord"/>
+          <include name="addEmployee"/>
+          <include name="TearDown"/>
+          <include name="Setup"/>
+        </methods>
+      </class> <!-- com.qa.testScript.TC_OrangeHrm_011 -->
+>>>>>>> 9d92b8617fe86eefe7e241a0a6e8eca8c120920c
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
