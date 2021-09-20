@@ -86,7 +86,7 @@ public class TestBase {
 	}	
 
 	public String[][] getExcelData(String sheet) throws IOException{
-		String path="C:\\Users\\tharu\\git\\OrangeHrm_Automation\\src\\test\\java\\com\\qa\\testData\\leave_list.xlsx"; 
+		String path="C:\\Users\\INDIA\\Desktop\\OrangeHrmGitHub\\OrangeHrm_Automation\\src\\test\\java\\com\\qa\\testData\\leave_list.xlsx"; 
 		ExcelUtility excelUtils =new ExcelUtility(path,sheet);
 
 		int rowCount=excelUtils.getRowCount();

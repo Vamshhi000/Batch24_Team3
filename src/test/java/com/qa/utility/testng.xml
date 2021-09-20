@@ -11,8 +11,8 @@
 
     <classes>
     
-	<!--	 	<class name="com.qa.testScript.TC_ASSIGNLEAVE_001"/>
-	 -->	<class name="com.qa.testScript.TC_LEAVELIST_002"/>
+		 	<class name="com.qa.testScript.TC_OrangeHrm_006"/>
+	 	<class name="com.qa.testScript.TC_OrangeHrm_005"/>
     	</classes>
   </test> 
 </suite> 

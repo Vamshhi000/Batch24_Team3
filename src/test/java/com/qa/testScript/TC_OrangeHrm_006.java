@@ -2,11 +2,10 @@ package com.qa.testScript;
 
 import org.testng.annotations.Test;
 
-public class TC_LEAVELIST_002 extends TestBase
+public class TC_OrangeHrm_006 extends TestBase
 {
-	@Test(dataProvider = "Sheet2")
-	
-	public void leave_list(String emp) throws InterruptedException {
+	@Test()
+	public void leave_list() throws InterruptedException {
 	//	driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
 		
 		orangeHrm.leavelnk().click();
