@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="4" passed="3" failed="1" skipped="0">
+<testng-results ignored="0" total="6" passed="5" failed="1" skipped="0">
   <reporter-output>
     <line>
       <![CDATA[Acurate search result appeared]]>
@@ -39,15 +39,15 @@
     </line>
     <line>
       <![CDATA[Employee Record :Id First (& Middle) Name Last Name Job Title Employment Status Sub Unit Supervisor
-0263 Kim Smith]]>
+0253 Kim Smith]]>
     </line>
   </reporter-output>
-  <suite started-at="2021-09-19T19:39:26 IST" name="Suite" finished-at="2021-09-19T19:42:15 IST" duration-ms="169249">
+  <suite started-at="2021-09-19T20:43:44 IST" name="Suite" finished-at="2021-09-19T20:48:03 IST" duration-ms="258981">
     <groups>
     </groups>
-    <test started-at="2021-09-19T19:39:26 IST" name="Test_01" finished-at="2021-09-19T19:42:15 IST" duration-ms="169249">
+    <test started-at="2021-09-19T20:43:44 IST" name="Test_01" finished-at="2021-09-19T20:48:03 IST" duration-ms="258981">
       <class name="com.qa.testScript.TC_OrangeHrm_001">
-        <test-method is-config="true" signature="Setup(java.lang.String, java.lang.String)[pri:0, instance:com.qa.testScript.TC_OrangeHrm_001@3738449f]" started-at="2021-09-19T19:39:26 IST" name="Setup" finished-at="2021-09-19T19:39:57 IST" duration-ms="31691" status="PASS">
+        <test-method is-config="true" signature="Setup(java.lang.String, java.lang.String)[pri:0, instance:com.qa.testScript.TC_OrangeHrm_001@79da8dc5]" started-at="2021-09-19T20:43:45 IST" name="Setup" finished-at="2021-09-19T20:44:14 IST" duration-ms="29386" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -63,7 +63,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Setup -->
-        <test-method signature="Recruitment(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.qa.testScript.TC_OrangeHrm_001@3738449f]" started-at="2021-09-19T19:39:59 IST" name="Recruitment" data-provider="recruitmentSearch" finished-at="2021-09-19T19:40:19 IST" duration-ms="19969" status="PASS">
+        <test-method signature="Recruitment(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.qa.testScript.TC_OrangeHrm_001@79da8dc5]" started-at="2021-09-19T20:44:14 IST" name="Recruitment" data-provider="recruitmentSearch" finished-at="2021-09-19T20:44:31 IST" duration-ms="16797" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -112,13 +112,13 @@
             </line>
           </reporter-output>
         </test-method> <!-- Recruitment -->
-        <test-method is-config="true" signature="TearDown()[pri:0, instance:com.qa.testScript.TC_OrangeHrm_001@3738449f]" started-at="2021-09-19T19:40:19 IST" name="TearDown" finished-at="2021-09-19T19:40:19 IST" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="TearDown()[pri:0, instance:com.qa.testScript.TC_OrangeHrm_001@79da8dc5]" started-at="2021-09-19T20:44:31 IST" name="TearDown" finished-at="2021-09-19T20:44:32 IST" duration-ms="637" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TearDown -->
       </class> <!-- com.qa.testScript.TC_OrangeHrm_001 -->
       <class name="com.qa.testScript.TC_OrangeHrm_011">
-        <test-method is-config="true" signature="Setup(java.lang.String, java.lang.String)[pri:0, instance:com.qa.testScript.TC_OrangeHrm_011@11bd0f3b]" started-at="2021-09-19T19:40:57 IST" name="Setup" finished-at="2021-09-19T19:41:27 IST" duration-ms="29649" status="PASS">
+        <test-method is-config="true" signature="Setup(java.lang.String, java.lang.String)[pri:0, instance:com.qa.testScript.TC_OrangeHrm_011@5fd4f8f5]" started-at="2021-09-19T20:46:53 IST" name="Setup" finished-at="2021-09-19T20:47:20 IST" duration-ms="26678" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -134,7 +134,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Setup -->
-        <test-method signature="addEmployee(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:1, instance:com.qa.testScript.TC_OrangeHrm_011@11bd0f3b]" started-at="2021-09-19T19:41:27 IST" name="addEmployee" data-provider="AddEmployee" finished-at="2021-09-19T19:41:52 IST" duration-ms="25471" status="FAIL">
+        <test-method signature="addEmployee(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:1, instance:com.qa.testScript.TC_OrangeHrm_011@5fd4f8f5]" started-at="2021-09-19T20:47:20 IST" name="addEmployee" data-provider="AddEmployee" finished-at="2021-09-19T20:47:42 IST" duration-ms="21850" status="FAIL">
           <params>
             <param index="0">
               <value>
@@ -216,7 +216,7 @@ at java.base/java.lang.Thread.run(Thread.java:832)
             </line>
           </reporter-output>
         </test-method> <!-- addEmployee -->
-        <test-method signature="getEmployeeRecord(java.lang.String)[pri:2, instance:com.qa.testScript.TC_OrangeHrm_011@11bd0f3b]" started-at="2021-09-19T19:41:52 IST" name="getEmployeeRecord" data-provider="getEmployeeRecord" finished-at="2021-09-19T19:42:15 IST" depends-on-methods="com.qa.testScript.TC_OrangeHrm_011.addEmployee" duration-ms="22320" status="PASS">
+        <test-method signature="getEmployeeRecord(java.lang.String)[pri:2, instance:com.qa.testScript.TC_OrangeHrm_011@5fd4f8f5]" started-at="2021-09-19T20:47:42 IST" name="getEmployeeRecord" data-provider="getEmployeeRecord" finished-at="2021-09-19T20:48:03 IST" depends-on-methods="com.qa.testScript.TC_OrangeHrm_011.addEmployee" duration-ms="20643" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -239,17 +239,17 @@ at java.base/java.lang.Thread.run(Thread.java:832)
             </line>
             <line>
               <![CDATA[Employee Record :Id First (& Middle) Name Last Name Job Title Employment Status Sub Unit Supervisor
-0263 Kim Smith]]>
+0253 Kim Smith]]>
             </line>
           </reporter-output>
         </test-method> <!-- getEmployeeRecord -->
-        <test-method is-config="true" signature="TearDown()[pri:0, instance:com.qa.testScript.TC_OrangeHrm_011@11bd0f3b]" started-at="2021-09-19T19:42:15 IST" name="TearDown" finished-at="2021-09-19T19:42:15 IST" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="TearDown()[pri:0, instance:com.qa.testScript.TC_OrangeHrm_011@5fd4f8f5]" started-at="2021-09-19T20:48:03 IST" name="TearDown" finished-at="2021-09-19T20:48:03 IST" duration-ms="607" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TearDown -->
       </class> <!-- com.qa.testScript.TC_OrangeHrm_011 -->
       <class name="com.qa.testScript.TC_OrangeHrm_002">
-        <test-method is-config="true" signature="Setup(java.lang.String, java.lang.String)[pri:0, instance:com.qa.testScript.TC_OrangeHrm_002@69e1dd28]" started-at="2021-09-19T19:40:19 IST" name="Setup" finished-at="2021-09-19T19:40:48 IST" duration-ms="29616" status="PASS">
+        <test-method is-config="true" signature="Setup(java.lang.String, java.lang.String)[pri:0, instance:com.qa.testScript.TC_OrangeHrm_002@1eb5174b]" started-at="2021-09-19T20:44:32 IST" name="Setup" finished-at="2021-09-19T20:44:59 IST" duration-ms="26836" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -265,7 +265,7 @@ at java.base/java.lang.Thread.run(Thread.java:832)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Setup -->
-        <test-method signature="addCustomer(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.qa.testScript.TC_OrangeHrm_002@69e1dd28]" started-at="2021-09-19T19:40:48 IST" name="addCustomer" data-provider="addCandidate" finished-at="2021-09-19T19:40:57 IST" duration-ms="8589" status="PASS">
+        <test-method signature="addCustomer(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.qa.testScript.TC_OrangeHrm_002@1eb5174b]" started-at="2021-09-19T20:44:59 IST" name="addCustomer" data-provider="addCandidate" finished-at="2021-09-19T20:45:12 IST" duration-ms="13316" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -309,11 +309,117 @@ at java.base/java.lang.Thread.run(Thread.java:832)
             </line>
           </reporter-output>
         </test-method> <!-- addCustomer -->
-        <test-method is-config="true" signature="TearDown()[pri:0, instance:com.qa.testScript.TC_OrangeHrm_002@69e1dd28]" started-at="2021-09-19T19:40:57 IST" name="TearDown" finished-at="2021-09-19T19:40:57 IST" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="TearDown()[pri:0, instance:com.qa.testScript.TC_OrangeHrm_002@1eb5174b]" started-at="2021-09-19T20:45:12 IST" name="TearDown" finished-at="2021-09-19T20:45:13 IST" duration-ms="631" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TearDown -->
       </class> <!-- com.qa.testScript.TC_OrangeHrm_002 -->
+      <class name="com.qa.testScript.TC_OrangeHrm_007">
+        <test-method is-config="true" signature="Setup(java.lang.String, java.lang.String)[pri:0, instance:com.qa.testScript.TC_OrangeHrm_007@67080771]" started-at="2021-09-19T20:45:13 IST" name="Setup" finished-at="2021-09-19T20:45:39 IST" duration-ms="26633" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[https://opensource-demo.orangehrmlive.com/]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Setup -->
+        <test-method signature="system_user(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.qa.testScript.TC_OrangeHrm_007@67080771]" started-at="2021-09-19T20:45:39 IST" name="system_user" data-provider="Sheet2" finished-at="2021-09-19T20:45:54 IST" duration-ms="14951" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[shiva]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[All]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Joe Root]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[All]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- system_user -->
+        <test-method is-config="true" signature="TearDown()[pri:0, instance:com.qa.testScript.TC_OrangeHrm_007@67080771]" started-at="2021-09-19T20:45:54 IST" name="TearDown" finished-at="2021-09-19T20:45:55 IST" duration-ms="700" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TearDown -->
+      </class> <!-- com.qa.testScript.TC_OrangeHrm_007 -->
+      <class name="com.qa.testScript.TC_OrangeHrm_008">
+        <test-method is-config="true" signature="Setup(java.lang.String, java.lang.String)[pri:0, instance:com.qa.testScript.TC_OrangeHrm_008@72cde7cc]" started-at="2021-09-19T20:45:55 IST" name="Setup" finished-at="2021-09-19T20:46:22 IST" duration-ms="26868" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[https://opensource-demo.orangehrmlive.com/]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Setup -->
+        <test-method signature="user_add(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.qa.testScript.TC_OrangeHrm_008@72cde7cc]" started-at="2021-09-19T20:46:22 IST" name="user_add" data-provider="Sheet1" finished-at="2021-09-19T20:46:53 IST" duration-ms="30871" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[ESS]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Cassidy Hope]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[shiva]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[Enabled]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[shiva*12345]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[shiva*12345]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- user_add -->
+        <test-method is-config="true" signature="TearDown()[pri:0, instance:com.qa.testScript.TC_OrangeHrm_008@72cde7cc]" started-at="2021-09-19T20:46:53 IST" name="TearDown" finished-at="2021-09-19T20:46:53 IST" duration-ms="649" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TearDown -->
+      </class> <!-- com.qa.testScript.TC_OrangeHrm_008 -->
     </test> <!-- Test_01 -->
   </suite> <!-- Suite -->
 </testng-results>

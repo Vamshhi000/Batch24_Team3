@@ -19,6 +19,7 @@ import org.testng.annotations.Parameters;
 
 import com.qa.pages.AddEmployeePages;
 import com.qa.pages.RecruitmentPages;
+import com.qa.pages.SystemUserPage;
 import com.qa.utility.ExcelUtility;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
@@ -27,37 +28,43 @@ import io.github.bonigarcia.wdm.WebDriverManager;
 public class TestBase {
 	WebDriver driver=null;
 	RecruitmentPages recruitmentPages;
+
+	SystemUserPage sp;
+
 	AddEmployeePages addEmployeePages;
-	
+
+
 	@Parameters({ "OrangeHrmURL","Browser"})
 	@BeforeClass
 	public void Setup(String OrangeHrmURL,String browserName) throws IOException {
-		if (browserName.equalsIgnoreCase("Chrome")) {
 
 
-
-			
-
+		if (browserName.equalsIgnoreCase("Chrome")) 
+		{
 			WebDriverManager.chromedriver().setup();
 			driver =new ChromeDriver();
-		
-		}		else if (browserName.equalsIgnoreCase("Edge")) {
+
+		}		
+		else if (browserName.equalsIgnoreCase("Edge")) 
+		{
 
 			WebDriverManager.edgedriver().setup();
 
 			driver =new EdgeDriver();
-			
+
 
 
 		}
 		recruitmentPages = new RecruitmentPages(driver);
 
+		sp = new SystemUserPage(driver);
 
-		 addEmployeePages = new AddEmployeePages(driver);
+		addEmployeePages = new AddEmployeePages(driver);
+
 		driver.get(OrangeHrmURL);
 
-		
-		
+
+
 		driver.get(OrangeHrmURL);
 		Properties properties= new Properties();
 		String projectPath=System.getProperty("user.dir");
@@ -67,7 +74,7 @@ public class TestBase {
 		recruitmentPages.userName().sendKeys(properties.getProperty("UserName"));
 		recruitmentPages.password().sendKeys(properties.getProperty("Password"));
 		recruitmentPages.login().click();
-		
+
 
 
 
@@ -76,7 +83,7 @@ public class TestBase {
 	@AfterClass
 	public void TearDown() throws InterruptedException {
 
-//		driver.quit();
+driver.quit();
 	}
 
 	public void captureScreenshot(WebDriver driver,String tname) throws IOException {
@@ -95,8 +102,10 @@ public class TestBase {
 
 	public String[][] getExcelData(String sheet) throws IOException{
 
+
 		String projectPath=System.getProperty("user.dir");
 		String path=projectPath+"\\src\\test\\java\\com\\qa\\testData\\orangeHrm_inputData.xlsx"; 
+
 
 		ExcelUtility excelUtils =new ExcelUtility(path,sheet);
 
@@ -129,7 +138,7 @@ public class TestBase {
 
 
 	}
-	
+
 
 
 

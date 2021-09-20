@@ -14,7 +14,7 @@ public class TC_OrangeHrm_002 extends TestBase{
 
 	@Test(dataProvider = "addCandidate")
 	public void addCustomer(String firstName,String middleName,String lastName,
-			String email,String vacency,String number,String selectActionn) throws IOException {
+			String email,String vacency,String number,String selectActionn) throws IOException, InterruptedException {
 		recruitmentPages.recruitment().click();
 		recruitmentPages.addBtn().click();
 		recruitmentPages.firstName().sendKeys(firstName);
@@ -26,8 +26,9 @@ public class TC_OrangeHrm_002 extends TestBase{
 		Select cVacency = new Select(recruitmentPages.cVacency()); 
 		cVacency.selectByVisibleText(vacency);
 		recruitmentPages.saveCus().click(); 
-
-		Select selectAction = new Select(recruitmentPages.selectAction()); 
+		Thread.sleep(3000);
+		Select selectAction = new Select(recruitmentPages.selectAction());
+		Thread.sleep(3000);
 		selectAction.selectByVisibleText(selectActionn);
 
 		recruitmentPages.shortlist().click();
