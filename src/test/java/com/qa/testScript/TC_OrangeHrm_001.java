@@ -56,9 +56,6 @@ public class TC_OrangeHrm_001 extends TestBase{
 		recruitmentPages.search().click();
 
 		List<WebElement> records=recruitmentPages.searchResult();
-	
-
-
 		if(records.size()!=0) {
 
 			if(recruitmentPages.tableVacency().getText().equals(vacency)) {

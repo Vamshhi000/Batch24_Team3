@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
 <suite parallel="tests" name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
@@ -18,3 +19,58 @@
     </classes>
   </test> <!-- Test_01(failed) -->
 </suite> <!-- Failed suite [Suite] -->
+=======
+<<<<<<< HEAD
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+  <listeners>
+    <listener class-name="com.qa.utility.Reporting"/>
+  </listeners>
+  <test thread-count="5" name="Test_01(failed)">
+    <parameter name="OrangeHrmURL" value="https://opensource-demo.orangehrmlive.com/"/>
+    <parameter name="Browser" value="Chrome"/>
+    <classes>
+      <class name="com.qa.testScript.TC_OrangeHrm_007">
+        <methods>
+          <include name="system_user"/>
+          <include name="TearDown"/>
+          <include name="Setup"/>
+        </methods>
+      </class> <!-- com.qa.testScript.TC_OrangeHrm_007 -->
+    </classes>
+  </test> <!-- Test_01(failed) -->
+</suite> <!-- Failed suite [Suite] -->
+=======
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+  <listeners>
+    <listener class-name="com.qa.utility.Reporting"/>
+  </listeners>
+  <test thread-count="5" name="Test_01(failed)">
+    <parameter name="OrangeHrmURL" value="https://opensource-demo.orangehrmlive.com/"/>
+    <parameter name="Browser" value="Chrome"/>
+    <classes>
+<<<<<<< HEAD
+      <class name="com.qa.testScript.TC_LEAVELIST_002">
+        <methods>
+=======
+      <class name="com.qa.testScript.TC_OrangeHrm_011">
+        <methods>
+          <include name="addEmployee" invocation-numbers="0"/>
+>>>>>>> 9d92b8617fe86eefe7e241a0a6e8eca8c120920c
+          <include name="TearDown"/>
+          <include name="leave_list"/>
+          <include name="Setup"/>
+        </methods>
+<<<<<<< HEAD
+      </class> <!-- com.qa.testScript.TC_LEAVELIST_002 -->
+=======
+      </class> <!-- com.qa.testScript.TC_OrangeHrm_011 -->
+>>>>>>> 9d92b8617fe86eefe7e241a0a6e8eca8c120920c
+    </classes>
+  </test> <!-- Test_01(failed) -->
+</suite> <!-- Failed suite [Suite] -->
+>>>>>>> 23c6714606cf841921cd75843afb645abc8889fa
+>>>>>>> 891fbbaf4674cc31336f34dd91e359cb8966bf1e

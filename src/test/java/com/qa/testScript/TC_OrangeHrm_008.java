@@ -16,8 +16,11 @@ public class TC_OrangeHrm_008 extends TestBase
 		sp.admin().click();
 		Thread.sleep(3000);
 		
+		
 		sp.ClickUserAdd().click();
 		Thread.sleep(3000);
+		
+		
 		
 		Select s = new Select(sp.setuserType());
 		s.selectByVisibleText(type);

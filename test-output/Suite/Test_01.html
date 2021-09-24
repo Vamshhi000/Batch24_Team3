@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>Test_01</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>5/1/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>9/0/0</td>
 </tr><tr>
-<td>Started on:</td><td>Sun Sep 19 20:43:44 IST 2021</td>
+<td>Started on:</td><td>Mon Sep 20 10:56:03 IST 2021</td>
 </tr>
-<tr><td>Total time:</td><td>258 seconds (258981 ms)</td>
+<tr><td>Total time:</td><td>372 seconds (372120 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -67,70 +67,6 @@ function toggleAllBoxes() {
 </tr>
 </table><p/>
 <small><i>(Hover the method name to see the test class name)</i></small><p/>
-<table width='100%' border='1' class='invocation-failed'>
-<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
-<tr><td><b>Test method</b></td>
-<td width="30%"><b>Exception</b></td>
-<td width="10%"><b>Time (seconds)</b></td>
-<td><b>Instance</b></td>
-</tr>
-<tr>
-<td title='com.qa.testScript.TC_OrangeHrm_011.addEmployee()'><b>addEmployee</b><br>Test class: com.qa.testScript.TC_OrangeHrm_011<br>Parameters: Kim, Smith, KimSmith, Aa#8861189703, Aa#8861189703<br/>
-<a href="#Output-1590965010" onClick='toggleBox("Output-1590965010", this, "Show output", "Hide output");'>Show output</a>
-
-<a href="#Output-1590965010" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-1590965010">
-PIM module page is displayed<br/>
-AddEmployee page is displayed<br/>
-First Name is entered<br/>
-Last Name is entered<br/>
-Checkbox is selected and Login credentials are entered<br/>
-Failed to save!!..UserName exists<br/>
-</div>
-</td>
-<td><div><pre>java.lang.AssertionError
-	at org.junit.Assert.fail(Assert.java:86)
-	at org.junit.Assert.assertTrue(Assert.java:41)
-	at org.junit.Assert.assertTrue(Assert.java:52)
-	at com.qa.testScript.TC_OrangeHrm_011.addEmployee(TC_OrangeHrm_011.java:53)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
-	at java.base/java.lang.Thread.run(Thread.java:832)
-... Removed 18 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1590965010", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1590965010'><pre>java.lang.AssertionError
-	at org.junit.Assert.fail(Assert.java:86)
-	at org.junit.Assert.assertTrue(Assert.java:41)
-	at org.junit.Assert.assertTrue(Assert.java:52)
-	at com.qa.testScript.TC_OrangeHrm_011.addEmployee(TC_OrangeHrm_011.java:53)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:134)
-	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:597)
-	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
-	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
-	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:816)
-	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-	at org.testng.TestRunner.privateRun(TestRunner.java:766)
-	at org.testng.TestRunner.run(TestRunner.java:587)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
-	at org.testng.SuiteRunner.access$000(SuiteRunner.java:28)
-	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:425)
-	at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:68)
-	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
-	at java.base/java.lang.Thread.run(Thread.java:832)
-</pre></div></td>
-<td>21</td>
-<td>com.qa.testScript.TC_OrangeHrm_011@5fd4f8f5</td></tr>
-</table><p>
 <table width='100%' border='1' class='invocation-passed'>
 <tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
 <tr><td><b>Test method</b></td>
@@ -140,55 +76,87 @@ Failed to save!!..UserName exists<br/>
 </tr>
 <tr>
 <td title='com.qa.testScript.TC_OrangeHrm_001.Recruitment()'><b>Recruitment</b><br>Test class: com.qa.testScript.TC_OrangeHrm_001<br>Parameters: QA Lead, Senior QA Lead, Odis Adalwin, Application Initiated, Joe Root, Manual, 2020, Oct<br/>
-<a href="#Output-1961103935" onClick='toggleBox("Output-1961103935", this, "Show output", "Hide output");'>Show output</a>
+<a href="#Output-284155591" onClick='toggleBox("Output-284155591", this, "Show output", "Hide output");'>Show output</a>
 
-<a href="#Output-1961103935" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-1961103935">
+<a href="#Output-284155591" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-284155591">
 Acurate search result appeared<br/>
 </div>
 </td>
 <td></td>
-<td>16</td>
-<td>com.qa.testScript.TC_OrangeHrm_001@79da8dc5</td></tr>
+<td>15</td>
+<td>com.qa.testScript.TC_OrangeHrm_001@be35cd9</td></tr>
 <tr>
 <td title='com.qa.testScript.TC_OrangeHrm_002.addCustomer()'><b>addCustomer</b><br>Test class: com.qa.testScript.TC_OrangeHrm_002<br>Parameters: vamsi, krishna, reddy, reddy@gmail.com, Junior Account Assistant, 2147483647, Shortlist<br/>
-<a href="#Output-2015106070" onClick='toggleBox("Output-2015106070", this, "Show output", "Hide output");'>Show output</a>
+<a href="#Output-116615397" onClick='toggleBox("Output-116615397", this, "Show output", "Hide output");'>Show output</a>
 
-<a href="#Output-2015106070" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-2015106070">
+<a href="#Output-116615397" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-116615397">
 Candidate added and Updated his Status<br/>
 </div>
 </td>
 <td></td>
-<td>13</td>
-<td>com.qa.testScript.TC_OrangeHrm_002@1eb5174b</td></tr>
+<td>11</td>
+<td>com.qa.testScript.TC_OrangeHrm_002@4944252c</td></tr>
+<tr>
+<td title='com.qa.testScript.TC_OrangeHrm_011.addEmployee()'><b>addEmployee</b><br>Test class: com.qa.testScript.TC_OrangeHrm_011<br>Parameters: Kim, Smith, KimSmith, Aa#8861189703, Aa#8861189703<br/>
+<a href="#Output-701262902" onClick='toggleBox("Output-701262902", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-701262902" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-701262902">
+PIM module page is displayed<br/>
+AddEmployee page is displayed<br/>
+First Name is entered<br/>
+Last Name is entered<br/>
+Checkbox is selected and Login credentials are entered<br/>
+Employee is saved and personal information page is displayed<br/>
+</div>
+</td>
+<td></td>
+<td>21</td>
+<td>com.qa.testScript.TC_OrangeHrm_011@1ba9117e</td></tr>
+<tr>
+<td title='com.qa.testScript.TC_OrangeHrm_005.add_leave()'><b>add_leave</b><br>Test class: com.qa.testScript.TC_OrangeHrm_005<br>Parameters: Goutam Ganesh, CAN - Vacation, Tuesday, 2021, Sep, 21, sick</td>
+<td></td>
+<td>9</td>
+<td>com.qa.testScript.TC_OrangeHrm_005@272ed83b</td></tr>
+<tr>
+<td title='com.qa.testScript.TC_OrangeHrm_003.addqualification()'><b>addqualification</b><br>Test class: com.qa.testScript.TC_OrangeHrm_003<br>Parameters: java, programing</td>
+<td></td>
+<td>22</td>
+<td>com.qa.testScript.TC_OrangeHrm_003@41fecb8b</td></tr>
 <tr>
 <td title='com.qa.testScript.TC_OrangeHrm_011.getEmployeeRecord()'><b>getEmployeeRecord</b><br>Test class: com.qa.testScript.TC_OrangeHrm_011<br>Parameters: Kim Smith<br/>
-<a href="#Output-630902437" onClick='toggleBox("Output-630902437", this, "Show output", "Hide output");'>Show output</a>
+<a href="#Output-740308670" onClick='toggleBox("Output-740308670", this, "Show output", "Hide output");'>Show output</a>
 
-<a href="#Output-630902437" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-630902437">
+<a href="#Output-740308670" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-740308670">
 PIM module page is displayed<br/>
 EmployeeList page is displayed<br/>
 Employee Name is entered<br/>
 Employee Record is found<br/>
 Employee Record :Id First (& Middle) Name Last Name Job Title Employment Status Sub Unit Supervisor
-0253 Kim Smith<br/>
+0259 Kim Smith<br/>
 </div>
 </td>
 <td></td>
-<td>20</td>
-<td>com.qa.testScript.TC_OrangeHrm_011@5fd4f8f5</td></tr>
+<td>19</td>
+<td>com.qa.testScript.TC_OrangeHrm_011@1ba9117e</td></tr>
+<tr>
+<td title='com.qa.testScript.TC_OrangeHrm_006.leave_list()'><b>leave_list</b><br>Test class: com.qa.testScript.TC_OrangeHrm_006</td>
+<td></td>
+<td>13</td>
+<td>com.qa.testScript.TC_OrangeHrm_006@732c2a62</td></tr>
 <tr>
 <td title='com.qa.testScript.TC_OrangeHrm_007.system_user()'><b>system_user</b><br>Test class: com.qa.testScript.TC_OrangeHrm_007<br>Parameters: shiva, All, Joe Root, All</td>
 <td></td>
 <td>14</td>
-<td>com.qa.testScript.TC_OrangeHrm_007@67080771</td></tr>
+<td>com.qa.testScript.TC_OrangeHrm_007@44821a96</td></tr>
 <tr>
 <td title='com.qa.testScript.TC_OrangeHrm_008.user_add()'><b>user_add</b><br>Test class: com.qa.testScript.TC_OrangeHrm_008<br>Parameters: ESS, Cassidy Hope, shiva, Enabled, shiva*12345, shiva*12345</td>
 <td></td>
 <td>30</td>
-<td>com.qa.testScript.TC_OrangeHrm_008@72cde7cc</td></tr>
+<td>com.qa.testScript.TC_OrangeHrm_008@a3d8174</td></tr>
 </table><p>
 </body>
 </html>

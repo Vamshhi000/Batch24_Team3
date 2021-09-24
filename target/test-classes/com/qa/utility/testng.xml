@@ -4,20 +4,22 @@
   <listeners>
 <listener class-name="com.qa.utility.Reporting"></listener>
 </listeners>
-
+<!-- Test_01 -->
     <test name="Test_01" >
   		<parameter name="OrangeHrmURL" value="https://opensource-demo.orangehrmlive.com/"></parameter>
 					<parameter name="Browser" value="Chrome"></parameter>
 
-    <classes>
+   	<classes>
  			<class name="com.qa.testScript.TC_OrangeHrm_001"/> 
-			 <class name="com.qa.testScript.TC_OrangeHrm_002"/>
-     
+			<class name="com.qa.testScript.TC_OrangeHrm_002"/>
 			<class name="com.qa.testScript.TC_OrangeHrm_007"/>
-			
 			<class name="com.qa.testScript.TC_OrangeHrm_008"/>
-			<class name="com.qa.testScript.TC_OrangeHrm_011"/>
-
+			<class name="com.qa.testScript.TC_OrangeHrm_011"/> 
+		 	<class name="com.qa.testScript.TC_OrangeHrm_006"/>
+	 		<class name="com.qa.testScript.TC_OrangeHrm_005"/>
+			<class name="com.qa.testScript.TC_OrangeHrm_003"/>
     </classes>
+
+
   </test> 
 </suite> 
